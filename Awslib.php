@@ -33,9 +33,6 @@ class Awslib {
  */
 		$configFilePath = ROOT_PATH.'libraries/aws-sdk-2/config.php';
 
-		// Get a CI instance
-		$this->_ci =& get_instance();
-
 		// Get aws instance
 		$this->aws = Aws\Common\Aws::factory($configFilePath);
 	}
