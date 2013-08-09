@@ -10,7 +10,7 @@
 /*
  * path to autoloader
  */
-require ROOT_PATH.'libraries/aws-sdk-2/aws-autoloader.php';
+require 'aws-sdk-php/aws-autoloader.php';
 use Aws\DynamoDb\DynamoDbClient;
 use Aws\DynamoDb\Enum\ComparisonOperator;
 use Aws\DynamoDb\Enum\Type;
@@ -31,7 +31,7 @@ class Awslib {
 /*
  * path to config file
  */
-		$configFilePath = ROOT_PATH.'libraries/aws-sdk-2/config.php';
+		$configFilePath = 'aws-sdk-php/config.php';
 
 		// Get aws instance
 		$this->aws = Aws\Common\Aws::factory($configFilePath);
