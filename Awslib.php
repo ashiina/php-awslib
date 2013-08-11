@@ -11,9 +11,6 @@
  * path to autoloader
  */
 require 'aws-sdk-php/aws-autoloader.php';
-use Aws\DynamoDb\DynamoDbClient;
-use Aws\DynamoDb\Enum\ComparisonOperator;
-use Aws\DynamoDb\Enum\Type;
 
 class Awslib {
 
